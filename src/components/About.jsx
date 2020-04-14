@@ -1,6 +1,31 @@
 import React, { Component } from "react";
 
 export class About extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      
+      teams: [
+        {
+          id: 1,
+          title: "Krishanathep.J",
+          text: "Web Developer",
+        },
+        {
+          id: 2,
+          title: "Narumon.P",
+          text: "Digital Marketing",
+        },
+        {
+          id: 3,
+          title: "Teerapong.W",
+          text: "Customer Support",
+        },
+      ],
+    };
+  }
+
   render() {
     return (
       <div className="About">
