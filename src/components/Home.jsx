@@ -133,12 +133,28 @@ export class Home extends Component {
             title: 'Teerapong.W',
             text: 'Customer Support'
         },
-      ]
+      ],
+      email: '',
+      message: ''
     };
+
+    this.handleChange = this.handleChange.bind(this)
+    this.sendMessage = this.sendMessage.bind(this)
+  }
+
+  handleChange(e) {
+    e.preventDefault()
+    const target = e.target
+    const value = target.value
+    const name = target.name
+
+    this.setState({ [name]: value })
   }
 
   sendMessage() {
-      alert('Thank You For Your Message!')
+    alert('Thank You For Your Message!')
+
+    this.setState({ email: '', message: '' })
   }
 
   render() {
@@ -224,13 +240,15 @@ export class Home extends Component {
           <div className="col-md-12">
             <div className="card my-5 border-0">
               <div className="card-body">
-                <form>
                   <div className="form-group">
                     <label className="text-muted">Email :</label>
                     <input
                       type="text"
+                      name='email'
+                      value={this.state.email}
                       className="form-control"
                       placeholder="Enter Your Email..."
+                      onChange={this.handleChange}
                     />
                   </div>
                   <div className="form-group">
@@ -238,12 +256,14 @@ export class Home extends Component {
                     <textarea
                       cols="30"
                       rows="5"
+                      name='message'
+                      value={this.state.message}
                       className="form-control"
-                      placeholder="Enter Your Message..."
+                      placeholder="Enter Your Message..."    
+                      onChange={this.handleChange}              
                     ></textarea>
                   </div>
                   <button onClick={this.sendMessage} className="btn btn-primary btn-block">SUBMIT</button>
-                </form>
               </div>
             </div>
           </div>
