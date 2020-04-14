@@ -12,7 +12,7 @@ class App extends Component {
 
     this.state = {
       brand: "REACT BOOTSTRAP",
-      footer: "REACT BOOTSTRAP BY FULL STACK SOLUTION CO,LTD.",
+      footer: "REACT BOOTSTRAP BY FULL STACK SOLUTION",
     };
   }
 
