@@ -159,7 +159,7 @@ export class Home extends Component {
 
   render() {
     return (
-      <div className="Home">
+      <div className="Home container">
         <Header />
         <div className="row">
           <div className="col-md-8 offset-md-2 my-5" align="center">

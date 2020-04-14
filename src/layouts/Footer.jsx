@@ -4,10 +4,12 @@ class Footer extends Component {
   render() {
     return (
       <div className="Footer">
-        <footer className="footer my-5">
-          <span className="text-muted">
+        <footer className="footer mt-5" align='center'>
+          <div className="container">
+            <span className="text-muted">
               &copy; {this.props.footer}
             </span>
+          </div>
         </footer>
       </div>
     );
