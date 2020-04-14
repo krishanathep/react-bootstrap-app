@@ -12,7 +12,8 @@ class App extends Component {
 
     this.state = {
       brand: "REACT BOOTSTRAP",
-      footer: "REACT BOOTSTRAP BY FULL STACK SOLUTION",
+      footer: "REACT BOOTSTRAP BY",
+      name: "FULL STACK SOLUTION"
     };
   }
 
@@ -26,7 +27,7 @@ class App extends Component {
             <Route path='/about' component={About} />
             <Route path='/news' component={News} />
           </Switch>
-          <Footer footer={this.state.footer} />
+          <Footer footer={this.state.footer} name={this.state.name} />
         </HashRouter>
       </div>
     );

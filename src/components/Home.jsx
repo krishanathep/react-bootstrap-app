@@ -100,23 +100,6 @@ export class Home extends Component {
             "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         },
       ],
-      contacts: [
-        {
-          id: 1,
-          icon: "fas fa-phone",
-          text: "087-324-3929",
-        },
-        {
-          id: 2,
-          icon: "fas fa-envelope",
-          text: "Krishanathep@gmail.com",
-        },
-        {
-          id: 3,
-          icon: "fab fa-facebook-square",
-          text: "I am at Facebook",
-        },
-      ],
       teams: [
           {
               id: 1,
@@ -225,18 +208,40 @@ export class Home extends Component {
               send an email and I will get back to you as soon as possible!
             </h5>
           </div>
-          {this.state.contacts.map((contact) => (
             <div className="col-md-4">
               <div className="text-muted card mt-3 border-0" align="center">
                 <div className="card-body">
                   <h1>
-                    <i className={contact.icon}></i>
+                    <i className="fas fa-phone"></i>
                   </h1>
-                  <p className="card-text text-primary">{contact.text}</p>
+                  <p className="card-text text-primary">087-324-3929</p>
                 </div>
               </div>
             </div>
-          ))}
+            <div className="col-md-4">
+              <div className="text-muted card mt-3 border-0" align="center">
+                <div className="card-body">
+                  <h1>
+                    <i className="fas fa-envelope"></i>
+                  </h1>
+                  <a href="mailto:krishanathep@gmail.com">
+                  <p className="card-text text-primary">Krishanathep@gmail.com</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="text-muted card mt-3 border-0" align="center">
+                <div className="card-body">
+                  <h1>
+                    <i className="fab fa-facebook-square"></i>
+                  </h1>
+                  <a href="https://www.facebook.com">
+                  <p className="card-text text-primary">I am at Facebook</p>
+                  </a>
+                </div>
+              </div>
+            </div>
           <div className="col-md-12">
             <div className="card my-5 border-0">
               <div className="card-body">

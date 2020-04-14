@@ -7,9 +7,9 @@ export class Navbar extends Component {
       <div className="Navbar">
         <nav className="navbar navbar-expand-lg bg-primary navbar-dark fixed-top">
           <div className="container">
-            <a href={'/'} className="navbar-brand">
+            <Link to={'/'} className="navbar-brand">
               {this.props.brand}
-            </a>
+            </Link>
             <button
               class="navbar-toggler"
               type="button"
@@ -24,17 +24,17 @@ export class Navbar extends Component {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <Link to="/" className="nav-link">
+                  <Link to="/" className="nav-link active">
                     HOME
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/about" className="nav-link">
+                  <Link to="/about" className="nav-link active">
                     ABOUT
                   </Link>
                 </li>
                 <li className="nav item">
-                  <Link to="/news" className="nav-link">
+                  <Link to="/news" className="nav-link active">
                     NEWS
                   </Link>
                 </li>
