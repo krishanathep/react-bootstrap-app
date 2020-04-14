@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from './components/About'
 import News from './components/News'
 import Footer from "./layouts/Footer";
+import Movies from "./components/movies/Movies";
 
 class App extends Component {
   constructor() {
@@ -26,6 +27,7 @@ class App extends Component {
             <Route exact path ='/' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/news' component={News} />
+            <Route path='/movies' component={Movies} />
           </Switch>
           <Footer footer={this.state.footer} name={this.state.name} />
         </HashRouter>
