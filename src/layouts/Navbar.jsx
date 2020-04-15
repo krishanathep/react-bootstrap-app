@@ -24,24 +24,24 @@ export class Navbar extends Component {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <Link to="/" className="nav-link active">
+                  <Link to="/" className="nav-link">
                     HOME
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/about" className="nav-link active">
+                  <Link to="/about" className="nav-link">
                     ABOUT
                   </Link>
                 </li>
                 <li className="nav item">
-                  <Link to="/news" className="nav-link active">
+                  <Link to="/news" className="nav-link">
                     NEWS
                   </Link>
                 </li>
                 <li className='nav-item dropdown'>
-                  <a 
-                    href="#" 
-                    className="nav-link dropdown-toggle active"
+                  <Link 
+                    to={'#'} 
+                    className="nav-link dropdown-toggle"
                     id='navbarDropdown'
                     role='button'
                     data-toggle='dropdown'
@@ -49,11 +49,11 @@ export class Navbar extends Component {
                     aria-expanded='false'
                   >
                     SERVICES
-                  </a>
+                  </Link>
                   <div className="dropdown-menu" aria-labelledby='navbarDropdown'>
                     <Link to={'/movies'} className='dropdown-item'>Movies</Link>
-                    <a href="" className='dropdown-item'>Services-2</a>
-                    <a href="" className='dropdown-item'>Services-3</a>
+                    <Link to={'/users'} className='dropdown-item'>Users</Link>
+                    <Link to={'#'} className='dropdown-item'>Products</Link>
                   </div>
                 </li>
               </ul>
